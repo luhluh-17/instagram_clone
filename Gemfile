@@ -68,3 +68,6 @@ end
 
 # Test Framework
 gem 'rspec-rails', '~> 6.1', '>= 6.1.1'
+
+gem 'bootstrap', '~> 5.2', '>= 5.2.3'
+gem 'sassc-rails', '~> 2.1', '>= 2.1.2'

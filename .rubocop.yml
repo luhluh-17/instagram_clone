@@ -1,0 +1,94 @@
+# Require rubocop-rails for Rails-related configurations
+require:
+  - rubocop-rails
+
+# AllCops settings
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'bin/**/*'
+    - 'db/schema.rb'
+
+# Layout cops
+Layout/EndOfLine:
+  Enabled: true
+  EnforcedStyle: lf
+
+Layout/IndentationConsistency:
+  Enabled: true
+
+Layout/IndentationWidth:
+  Enabled: true
+  Width: 2
+
+Layout/SpaceInsideBlockBraces:
+  Enabled: true
+
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: true
+
+Layout/SpaceInsideParens:
+  Enabled: true
+
+Layout/LineLength:
+  Enabled: true
+  Max: 120
+  Exclude:
+    - 'config/initializers/devise.rb'
+
+# Metrics cops
+Metrics/BlockLength:
+  Enabled: true
+  Max: 50
+
+Metrics/CyclomaticComplexity:
+  Enabled: true
+  Max: 20
+
+Metrics/MethodLength:
+  Enabled: true
+  Max: 50
+
+Metrics/ModuleLength:
+  Enabled: true
+  Max: 200
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: true
+  Max: 20
+
+# Disable Style/Documentation cop
+Style/Documentation:
+  Enabled: false
+
+# Disable Style/FrozenStringLiteralComment cop
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# Enable if plan to add different text for each locale
+Rails/I18nLocaleTexts:
+  Enabled: false
+
+# Disable Style/ClassAndModuleChildren cop
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/RedundantFetchBlock:
+  Exclude:
+    - '**/puma.rb'
+
+Style/GlobalStdStream:
+  Enabled: false
+
+# Ignore for doorkeeper
+Rails/ReversibleMigration:
+  Enabled: false
+
+Rails/HasManyOrHasOneDependent:
+  Enabled: false
+
+Rails/InverseOf:
+  Enabled: false

@@ -65,3 +65,6 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
 end
+
+# Test Framework
+gem 'rspec-rails', '~> 6.1', '>= 6.1.1'
